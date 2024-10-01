@@ -1135,8 +1135,8 @@ a {
     }
 
     .footer__body-logo {
-        width: 150rem;
-        height: 19rem;
+        width: 153rem;
+        height: 16rem;
     }
 
     .footer__body-logo img {
@@ -1185,8 +1185,8 @@ a {
     }
 
     .header__body-logo {
-        width: 150rem;
-        height: 19rem;
+        width: 153rem;
+        height: 16rem;
     }
 
     .header__body-logo img {
@@ -1245,7 +1245,7 @@ a {
         border-radius: 16rem;
         transition: all 0.3s ease;
     }
-
+    
     .items__body-item-text {
         padding: 16rem 0rem 0rem 16rem;
         display: -webkit-box;
@@ -1394,7 +1394,10 @@ a {
     .items__body-item:nth-child(2n) {
         background: #e5f2ff !important
     }
+    .items__body-item:hover {
+        background: #cccccc50 !important;
 
+    }
     .main {
         width: 100%;
         margin-top: 55rem
