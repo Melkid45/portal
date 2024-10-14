@@ -9,251 +9,632 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../scss/style.min.css">
+        <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+        <link rel="stylesheet" href="../scss/style.min.css">
     <title>Курьерский портал</title>
 </head>
 
 <body>
-    <div class="main__wrap">
-        <img class="main__wrap-back" src="../images/dist/main__back.png" alt="">
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+            <link href="
+            https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+            " rel="stylesheet">
+            <link rel="stylesheet" href="../scss/style.min.css">
+        <title>Курьерский портал</title>
+    </head>
+    
+    <body>
         <header class="header">
             <div class="container">
                 <div class="header__body">
                     <a href="" class="header__body-logo">
                         <img src="../images/dist/logo.png" alt="">                  
                     </a>
-                    <a href="" class="header__body-choose">
-                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="header__body-choose">
+                        <svg class="dopen" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 2C0 0.895431 0.895431 0 2 0H6C7.10457 0 8 0.895431 8 2V6C8 7.10457 7.10457 8 6 8H2C0.895431 8 0 7.10457 0 6V2Z" fill="#007AFF"/>
                             <path d="M10 2C10 0.895431 10.8954 0 12 0H16C17.1046 0 18 0.895431 18 2V6C18 7.10457 17.1046 8 16 8H12C10.8954 8 10 7.10457 10 6V2Z" fill="#007AFF"/>
                             <path d="M10 12C10 10.8954 10.8954 10 12 10H16C17.1046 10 18 10.8954 18 12V16C18 17.1046 17.1046 18 16 18H12C10.8954 18 10 17.1046 10 16V12Z" fill="#007AFF"/>
                             <path d="M0 12C0 10.8954 0.895431 10 2 10H6C7.10457 10 8 10.8954 8 12V16C8 17.1046 7.10457 18 6 18H2C0.895431 18 0 17.1046 0 16V12Z" fill="#007AFF"/>
                         </svg>
+                        <svg class="open" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L15 15" stroke="#007AFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 3L3 15" stroke="#007AFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                    
                         <span>Все разделы</span>                    
-                    </a>
+                    </button>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <nav class="header__menu-body">
+                            <ul class="header__menu-body-list">
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/1.png" alt="">
+                                        <span>Рассчет посылки</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/2.png" alt="">
+                                        <span>Отправка писем</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/3.png" alt="">
+                                        <span>Узнать почтовые индексы</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/4.png" alt="">
+                                        <span>Статистика сроков доставки</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/5.png" alt="">
+                                        <span>Статьи</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/6.png" alt="">
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-body-list">
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/7.png" alt="">
+                                        <span>Службы доставки</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/8.png" alt="">
+                                        <span>Расшифровка статусов</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/9.png" alt="">
+                                        <span>Как улучшить управление доставкой?</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/10.png" alt="">
+                                        <span>Мобильные приложения</span>
+                                    </a>
+                                </li>
+                                <div class="line"></div>
+                                <li>
+                                    <a href="">
+                                        <img src="../images/dist/meu/11.png" alt="">
+                                        <span>Улучшение процессов доставки</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
-        <main class="main">
+        <section class="watch">
             <div class="container">
-                <div class="main__body">
-                    <h1 class="main__body-title">
-                        Найдите интересующий вас вопрос
-                    </h1>
-                    <div class="main__body-wrap">
-                        <input placeholder="Поиск по статьям и разделам" type="text" id="search">
-                        <button>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5 4C15.6423 4 19 7.35751 19 11.4996C19 15.6417 15.6423 19 11.5 19C7.3577 19 4 15.6417 4 11.4996C4 7.35751 7.3577 4 11.5 4Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M17.3613 17.584L20.7863 21.0002" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                        
-                        </button>
+                <div class="watch__body">
+                    <div class="watch__body-text">
+                        <h1 class="watch__body-text-title">
+                            Отследить посылку по номеру (треку)
+                        </h1>
+                        <div class="watch__body-text-search">
+                            <input placeholder="Введите номер посылки" type="text">
+                            <button>
+                                Начать поиск
+                            </button>
+                        </div>
+                    </div>
+                    <img src="../images/dist/watch.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="main__services">
+            <div class="container">
+                <div class="main__services-body">
+                    <h2 class="main__services-body-title">
+                        Почтовые службы:
+                    </h2>
+                    <div class="main__services-body-block">
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/1.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/2.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/3.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/4.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/5.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/6.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/7.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/8.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/9.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/10.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/11.png" alt="">
+                        </div>
+                        <div class="main__services-body-block-item">
+                            <img src="../images/dist/ms/12.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
-    </div>
-    <section class="items">
-        <div class="container">
-            <div class="items__body">
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>
-                            Виды <br>упаковки
-                        </span>
-                        <p>
-                            Современные <br> технологии достигли <br> такого уровня, что
-                        </p>
+        </section>
+        <section class="soft">
+            <div class="container">
+                <div class="soft__body">
+                    <div class="soft__body-items">
+                        <div class="soft__body-items-item">
+                            <div class="soft__body-items-item-text">
+                                <span>Онлайн отслеживание почтовых направлений</span>
+                                <p>Более 1000 международных почтовых и курьерских служб</p>
+                            </div>
+                            <img src="../images/dist/soft/1.png" alt="">
+                        </div>
+                        <div class="soft__body-items-item">
+                            <div class="soft__body-items-item-text">
+                                <span>Точность отслеживания</span>
+                                <p>Самое точное отслеживание международных посылок по трек номеру</p>
+                            </div>
+                            <img src="../images/dist/soft/2.png" alt="">
+                        </div>
                     </div>
-                    <img src="../images/dist/item/1.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Отправка писем</span>
-                        <p>
-                            Принимая во внимание показатели успешности, новая <br> модель организационной.
-                        </p>
+                    <div class="soft__body-item">
+                        <div class="soft__body-item-text">
+                            <span>Отследить посылку</span>
+                            <p>Почта России, Aлиэкспресс, СДЭК, Деловые Линии, China Post, Boxberry, DPD, Joom, DHL, UPS, TNT и других</p>
+                        </div>
+                        <img src="../images/dist/soft/3.png" alt="">
                     </div>
-                    <img src="../images/dist/item/2.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Статистика сроков доставки</span>
-                        <p>Мы вынуждены отталкиваться от того, что <br> начало повседневной работы по.</p>
-                    </div>
-                    <img src="../images/dist/item/3.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Виды доставки</span>
-                        <p>Для современного мира внедрение <br> современных методик требует.</p>
-                    </div>
-                    <img src="../images/dist/item/4.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Узнать почтовые индексы</span>
-                        <p>Принимая во внимание показатели успешности, новая <br> модель организационной.</p>
-                    </div>
-                    <img src="../images/dist/item/5.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>
-                            Расшифровка <br>статусов
-                        </span>
-                        <p>Современные технологии достигли такого уровня, что </p>
-                    </div>
-                    <img src="../images/dist/item/6.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>FAQ</span>
-                        <p>
-                            Мы вынуждены отталкиваться от того, что <br> начало повседневной работы по.
-                        </p>
-                    </div>
-                    <img src="../images/dist/item/7.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Службы доставки</span>
-                        <p>Для современного мира внедрение <br> современных методик требует.</p>
-                    </div>
-                    <img src="../images/dist/item/8.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>
-                            Как улучшить <br> управление <br> доставкой?
-                        </span>
-                        <p>Современные техно</p>
-                    </div>
-                    <img src="../images/dist/item/9.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>
-                            Мобильные <br>приложения
-                        </span>
-                        <p>Современные <br> технологии достигли <br> такого уровня, что </p>
-                    </div>
-                    <img src="../images/dist/item/10.png" alt="">
-                </div>
-                <div class="items__body-item">
-                    <div class="items__body-item-text">
-                        <span>Улучшение <br> процессов <br> доставки</span>
-                        <p>Современные </p>
-                    </div>
-                    <img src="../images/dist/item/11.png" alt="">
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="product">
-        <div class="container">
-            <div class="product__body">
-                <div class="product__body-item">
-                    <div class="product__body-item-text">
-                        <span>Отправка международных посылок почтой России</span>
-                        <p>Как отправить международную посылку почтой России</p>
+        </section>
+        <section class="question">
+            <div class="container">
+                <div class="question__body">
+                    <h2 class="question__body-title">
+                        Вопросы и ответы
+                    </h2>
+                    <div class="question__body-block">
+                        <div class="question__body-block-list">
+                            <span class="question__body-block-list-item active">
+                                Что такое трек-код?
+                            </span>
+                            <span class="question__body-block-list-item">
+                                Варианты обозначения типа отправления
+                            </span>
+                            <span class="question__body-block-list-item">
+                                Почему не отображается информацию по трек коду?
+                            </span>
+                            <span class="question__body-block-list-item">
+                                Что делать, если посылка не отслеживается или идет слишком долго?
+                            </span>
+                            <span class="question__body-block-list-item">
+                                Для чего нужна регистрация?
+                            </span>
+                            <span class="question__body-block-list-item">
+                                Что означает “Трек-код добавлен“?
+                            </span>
+                        </div>
+                        <div class="question__body-block-answer">
+                            <p class="question__body-block-answer-item">
+                                Трек-код (почтовый идентификатор) — уникальный код, позволяющий следить за перемещением
+                                почтового отправления.
+                                <br><br>
+                                По регламенту “Международного Почтового Союза“, почтовый идентификатор (трек-код) состоит из 13
+                                символов, и включает в себя 2 латинские буквы в начале, первая из которых служит как индикатор
+                                типа отправления, Вторая буква служит для обозначения типа отправки, например: авиа, море, ж/д,
+                                9 цифр посередине (первые 8 цифр это уникальный код почтового отправления, а девятая цифра
+                                является контрольной суммой рассчитываемой по специальному алгоритму) и 2 латинские буквы в
+                                конце идентификатора указывающих страну отправителя.
+                            </p>
+                            <p class="question__body-block-answer-item ds">
+                                Второй текст для примера
+                            </p>
+                            <p class="question__body-block-answer-item ds">
+                                Третий текст для примера
+                            </p>
+                            <p class="question__body-block-answer-item ds">
+                                Четрвертый текст для примера
+                            </p>
+                            <p class="question__body-block-answer-item ds">
+                                Пятый текст для примера
+                            </p>
+                            <p class="question__body-block-answer-item ds">
+                                Шестой текст для примера
+                            </p>
+                        </div>
                     </div>
-                    <span class="product__body-item-date">
-                        28.08.2024 18:06:16
-                    </span>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7007 35.9991C23.7007 33.0711 23.8807 30.1401 24.2197 27.3202C19.1407 26.7352 14.3527 25.7992 9.92472 24.5392C8.37672 28.0492 7.50072 31.9221 7.50072 35.9991C7.50072 40.0761 8.37372 43.9461 9.92172 47.4561C14.3617 46.1901 19.1527 45.2511 24.2197 44.6691C23.8807 41.8521 23.7007 38.9241 23.7007 35.9991Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M42.5631 23.2632C40.9731 15.6942 38.1561 11.2482 35.9991 11.2482C33.8421 11.2482 31.0281 15.6942 29.438 23.2632C33.7971 23.5512 38.1861 23.5512 42.5631 23.2632Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4347 48.7254C31.0248 56.3004 33.8418 60.7494 35.9988 60.7494C38.1588 60.7494 40.9758 56.3004 42.5658 48.7254C38.1888 48.4344 33.7998 48.4344 29.4347 48.7254Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M47.7801 27.3215C48.1191 30.1416 48.2991 33.0726 48.2991 36.0006C48.2991 38.9256 48.1191 41.8506 47.7801 44.6676C52.8471 45.2496 57.6381 46.1886 62.0781 47.4516C63.6261 43.9446 64.4991 40.0746 64.4991 36.0006C64.4991 31.9236 63.6231 28.0535 62.0751 24.5405C57.6471 25.8035 52.8561 26.7395 47.7801 27.3215Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M47.0922 49.1169C45.6942 56.2719 43.0842 62.0949 39.3372 64.2849C47.9352 63.2769 55.3632 58.4319 59.8782 51.5079C55.8912 50.4309 51.6132 49.6239 47.0922 49.1169Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9085 49.1187C20.3875 49.6287 16.1095 50.4357 12.1225 51.5127C16.6375 58.4367 24.0655 63.2787 32.6634 64.2867C28.9165 62.0937 26.3065 56.2737 24.9085 49.1187Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9099 22.8707C26.3079 15.7217 28.9179 9.90167 32.6619 7.71167C24.0669 8.71967 16.6419 13.5617 12.1269 20.4797C16.1019 21.5537 20.3799 22.3607 24.9099 22.8707Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7013 27.7178C28.3863 30.2469 28.2003 33.0099 28.2003 35.9979C28.2003 38.9829 28.3863 41.7459 28.7013 44.2719C33.5523 43.9299 38.4333 43.9299 43.2993 44.2719C43.6143 41.7459 43.8003 38.9829 43.8003 35.9979C43.8003 33.0099 43.6143 30.2469 43.2993 27.7178C40.8663 27.8888 38.4303 28.0058 35.9943 28.0058C33.5583 28.0058 31.1253 27.8888 28.7013 27.7178Z" fill="#98C6F3"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M47.0907 22.8729C51.6207 22.3629 55.8987 21.5559 59.8737 20.4849C55.3617 13.5639 47.9337 8.72194 39.3357 7.71094C43.0827 9.90394 45.6927 15.7209 47.0907 22.8729Z" fill="#98C6F3"/>
-                    </svg>                    
-                </div>
-                <div class="product__body-item">
-                    <div class="product__body-item-text">
-                        <span>Предпочтовая подготовка почты России</span>
-                        <p>Как подключить услугу «Предпочтовая подготовка» на почте России </p>
-                    </div>
-                    <span class="product__body-item-date">
-                        28.08.2024 18:06:16
-                    </span>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M38.085 33.8307C38.364 33.9921 38.7081 33.9921 38.9871 33.8307L46.4913 29.4859C47.0832 29.1432 47.0919 28.2918 46.5069 27.9373L24.9388 14.8643C24.6583 14.6943 24.3075 14.6904 24.0232 14.8541L17.101 18.8397C16.6633 19.0962 16.2606 19.3956 15.8858 19.724C15.452 20.1041 15.5566 20.7855 16.0558 21.0746L38.085 33.8307Z" fill="#F4C388"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M51.7896 25.8762C52.071 26.0467 52.4226 26.0502 52.7073 25.8853L61.0284 21.0645C61.5276 20.7754 61.632 20.0943 61.1976 19.7151C60.8241 19.3891 60.4224 19.0915 59.9859 18.8357L42.9549 9.02866C40.2369 7.43866 36.8559 7.44166 34.1469 9.02566L30.2562 11.2656C29.6626 11.6073 29.653 12.4603 30.2385 12.8153L51.7896 25.8762Z" fill="#F4C388"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M54.9522 29.7852C54.6744 29.9461 54.5034 30.243 54.5034 30.564V37.7373C54.5034 38.9793 53.4954 39.9873 52.2534 39.9873C51.0114 39.9873 50.0034 38.9793 50.0034 37.7373V34.2135C50.0034 33.5202 49.2522 33.087 48.6522 33.4347L41.2572 37.7172C40.9794 37.878 40.8084 38.175 40.8084 38.496V63.3042C40.8084 63.8955 41.3712 64.3266 41.9169 64.0986C42.2688 63.9513 42.6132 63.7803 42.9474 63.5853L59.9934 53.7693C62.7024 52.1823 64.3854 49.2633 64.3854 46.1433V26.4662C64.3854 26.1979 64.3674 25.9319 64.3365 25.6683C64.2657 25.069 63.5922 24.7819 63.0699 25.0843L54.9522 29.7852Z" fill="#F4C388"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M36.3069 38.5194C36.3069 38.1981 36.1359 37.9014 35.8578 37.7406L14.027 25.1C13.504 24.7972 12.8289 25.0855 12.7591 25.6858C12.7292 25.9431 12.7119 26.2029 12.7119 26.4655V46.1454C12.7119 49.2624 14.3949 52.1844 17.1129 53.7744L34.1409 63.5814C34.4844 63.7809 34.8384 63.9549 35.2002 64.1037C35.7462 64.3284 36.3069 63.8973 36.3069 63.3069V38.5194Z" fill="#F4C388"/>
-                    </svg>                    
-                </div>
-                <div class="product__body-item">
-                    <div class="product__body-item-text">
-                        <span>Первый класс отправление почтой</span>
-                        <p>Как отправить письма и посылки 1 классом</p>
-                    </div>
-                    <span class="product__body-item-date">
-                        28.08.2024 18:06:16
-                    </span>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0671 46.5784L59.6931 42.1984C59.3751 41.8834 58.9431 41.7214 58.4841 41.7664L50.9991 42.4984L45.6921 36.1144L58.7361 22.8604C59.0211 22.5694 59.1771 22.1704 59.1651 21.7624C59.1531 21.3514 58.9731 20.9644 58.6671 20.6914C58.1931 20.2654 57.7401 19.8364 57.2901 19.4164C56.1471 18.3424 55.0671 17.3284 53.8191 16.4494C51.7581 14.9764 49.1781 14.7664 46.1601 15.8284C41.7711 17.3344 36.5991 19.1344 31.4871 21.0604C30.8091 21.3064 30.7071 21.2644 30.2361 20.7604L29.8161 20.3284C27.4461 17.9044 25.0011 15.3994 22.4241 13.0714C18.7731 9.79235 13.1751 7.93836 9.5061 11.6284C5.8491 15.2974 7.6941 20.8984 10.9641 24.5554C13.4721 27.3184 16.1361 29.9284 18.6561 32.3704C19.1541 32.8474 19.1841 32.9734 18.9441 33.6094C17.0451 38.6434 15.2451 43.8274 13.7061 48.2854C12.6381 51.3514 12.8391 53.8564 14.3241 55.9534C15.2211 57.2074 16.2921 58.3444 17.3241 59.4484C17.7381 59.8894 18.1551 60.3334 18.5691 60.7924C18.8451 61.0954 19.2321 61.2754 19.6401 61.2874C20.0391 61.2814 20.4471 61.1404 20.7381 60.8554C24.6291 57.0154 31.4841 50.2714 34.0041 47.7964L40.4211 53.0824L39.6441 60.5944C39.5991 61.0444 39.7581 61.4884 40.0761 61.8094L44.4471 66.1894C44.7291 66.4714 45.1131 66.6304 45.5091 66.6304C45.5691 66.6304 45.6291 66.6274 45.6921 66.6184C46.1481 66.5614 46.5561 66.2974 46.7961 65.9014L53.1651 55.3024L63.7761 48.9244C64.1751 48.6874 64.4391 48.2794 64.4931 47.8234C64.5501 47.3644 64.3911 46.9054 64.0671 46.5784Z" fill="#CCACF5"/>
-                    </svg> 
-                </div>
-                <div class="product__body-item">
-                    <div class="product__body-item-text">
-                        <span>Правила оформления МПО</span>
-                        <p>Порядок и особенности растоможки. Список документов для международных почтовых отправлений</p>
-                    </div>
-                    <span class="product__body-item-date">
-                        28.08.2024 18:06:16
-                    </span>
-                    <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M46.41 37.0818H34.44C33.21 37.0818 32.19 36.0618 32.19 34.8318C32.19 33.6018 33.21 32.5818 34.44 32.5818H46.41C47.64 32.5818 48.66 33.6018 48.66 34.8318C48.66 36.0618 47.64 37.0818 46.41 37.0818ZM46.41 51.5418H34.44C33.21 51.5418 32.19 50.5218 32.19 49.2918C32.19 48.0618 33.21 47.0418 34.44 47.0418H46.41C47.64 47.0418 48.66 48.0618 48.66 49.2918C48.66 50.5218 47.64 51.5418 46.41 51.5418ZM26.43 37.0818H25.56C24.33 37.0818 23.31 36.0618 23.31 34.8318C23.31 33.6018 24.33 32.5818 25.56 32.5818H26.43C27.66 32.5818 28.68 33.6018 28.68 34.8318C28.68 36.0618 27.66 37.0818 26.43 37.0818ZM26.43 51.5418H25.56C24.33 51.5418 23.31 50.5218 23.31 49.2918C23.31 48.0618 24.33 47.0418 25.56 47.0418H26.43C27.66 47.0418 28.68 48.0618 28.68 49.2918C28.68 50.5218 27.66 51.5418 26.43 51.5418ZM50.6784 13.1464C50.3184 13.04 49.9656 13.3088 49.9119 13.6803C49.3935 17.2688 46.2855 20.0417 42.57 20.0417H29.43C25.7149 20.0417 22.5806 17.2692 22.0586 13.6812C22.0045 13.3094 21.6512 13.0406 21.2911 13.1476C16.0372 14.7092 12.21 19.6049 12.21 25.3817V52.0818C12.21 59.1018 17.91 64.8318 24.96 64.8318H47.04C54.09 64.8318 59.79 59.1018 59.79 52.0818V25.3817C59.79 19.6034 55.9608 14.7066 50.6784 13.1464Z" fill="#B7EF8B"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M29.4204 16.4419H42.5604C44.6004 16.4419 46.2804 14.8219 46.3404 12.7819C46.3704 12.7219 46.3704 12.6619 46.3704 12.6019V10.9819C46.3704 8.88188 44.6604 7.17188 42.5604 7.17188H29.4204C27.3204 7.17188 25.5804 8.88188 25.5804 10.9819V12.6019C25.5804 12.6619 25.5804 12.6919 25.6104 12.7519C25.6704 14.8219 27.3804 16.4419 29.4204 16.4419Z" fill="#B7EF8B"/>
-                    </svg>                    
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__body">
-                <a href="" class="footer__body-logo">
-                    <img src="../images/dist/logo.png" alt="">
-                </a>
-                <ul class="footer__body-menu">
-                    <ul class="footer__body-menu-list">
-                        <li>
-                            <a href="">
-                                FAQ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Статистика сроков доставки
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Статьи
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Службы доставки
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Расшифровка статусов
-                            </a>
-                        </li>
-                    </ul>
-                </ul>
+        </section>
+        <section class="doc">
+            <div class="container">
+                <div class="doc__body">
+                    <h2 class="doc__body-title">
+                        Необходимые документы для получения заказа
+                    </h2>
+                    <div class="doc__body-block">
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>Юридическим лицам</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>Физическим лицам</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>На территории стран ЕАЭС для иностранных граждан</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>На территории Казахстана для граждан Казахстана</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>На территории Беларуси для граждан Беларуси</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                        <div class="doc__body-block-item">
+                            <div class="doc__body-block-item-top">
+                                <span>Детали ФЗ</span>
+                                <button>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 9L12 16L5 9" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                
+                                </button>
+                            </div>
+                            <ul class="doc__body-block-item-bot">
+                                <li>паспорт гражданина Республики Беларусь;</li>
+                                <li>вид на жительство в Республике Беларусь;</li>
+                                <li>удостоверение беженца;</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__body">
+                    <h2 class="advantages__body-title">
+                        Преимущества
+                    </h2>
+                    <div class="advantages__body-block">
+                        <div class="advantages__body-block-item">
+                            <div class="advantages__body-block-item-text">
+                                <span>Доставка от двери до двери</span>
+                                <p>Воспользуйтесь услугой забора посылок и заберите свою посылку из дома, офиса или любого другого удобного вам места!</p>
+                            </div>
+                            <img src="../images/dist/adv/1.png" alt="">
+                        </div>
+                        <div class="advantages__body-block-item">
+                            <div class="advantages__body-block-item-text">
+                                <span>Быстро и экономно</span>
+                                <p>Но граница обучения кадров требует анализа системы массового участия. С другой.</p>
+                            </div>
+                            <img src="../images/dist/adv/2.png" alt="">
+                        </div>
+                        <div class="advantages__body-block-item">
+                            <div class="advantages__body-block-item-text">
+                                <span>Доставка от двери до двери</span>
+                                <p>Воспользуйтесь услугой забора посылок и заберите свою посылку из дома, офиса или любого другого удобного вам места!</p>
+                            </div>
+                            <img src="../images/dist/adv/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review">
+            <div class="container">
+                <div class="review__body">
+                    <div class="review__body-top">
+                        <h2 class="review__body-top-title">
+                            Отзывы пользователей
+                        </h2>
+                        <span class="of">1/4</span>
+                    </div>
+                    <div id="rev" class="splide" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5L16 12L9 19" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5L16 12L9 19" stroke="#555555" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </button>
+                        </div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide review__body-slide">
+                                    <div class="review__body-slide-top">
+                                        <div class="review__body-slide-top-star">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                        </div>
+                                        <div class="review__body-slide-top-text">
+                                            <span>Задача организации, в особенности же дальнейшее развитие</span>
+                                            <p>Господа, высококачественный прототип будущего проекта предоставляет широкие возможности для кластеризации усилий. Как принято считать, сторонники тоталитаризма в науке могут быть превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review__body-slide-user">
+                                        <img src="../images/dist/rev/1.png" alt="">
+                                        <span>Олег</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide review__body-slide">
+                                    <div class="review__body-slide-top">
+                                        <div class="review__body-slide-top-star">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                        </div>
+                                        <div class="review__body-slide-top-text">
+                                            <span>Сложно сказать, почему сделанные</span>
+                                            <p>Господа, высококачественный прототип будущего проекта предоставляет широкие возможности для кластеризации усилий. Как принято считать, сторонники тоталитаризма в науке могут быть превращены.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review__body-slide-user">
+                                        <img src="../images/dist/rev/2.png" alt="">
+                                        <span>Игорь</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide review__body-slide">
+                                    <div class="review__body-slide-top">
+                                        <div class="review__body-slide-top-star">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                        </div>
+                                        <div class="review__body-slide-top-text">
+                                            <span>Не следует, однако, забывать, что современная методология.</span>
+                                            <p>Но явные признаки победы институционализации смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Приятно, граждане, наблюдать, как независимые государства и по сей день.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review__body-slide-user">
+                                        <img src="../images/dist/rev/1.png" alt="">
+                                        <span>Галина</span>
+                                    </div>
+                                </li>
+                                <li class="splide__slide review__body-slide">
+                                    <div class="review__body-slide-top">
+                                        <div class="review__body-slide-top-star">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                            <img src="../images/dist/star.png" alt="">
+                                        </div>
+                                        <div class="review__body-slide-top-text">
+                                            <span>Сложно сказать, почему сделанные</span>
+                                            <p>Господа, высококачественный прототип будущего проекта предоставляет широкие возможности для кластеризации усилий. Как принято считать, сторонники тоталитаризма в науке могут быть превращены.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review__body-slide-user">
+                                        <img src="../images/dist/rev/2.png" alt="">
+                                        <span>Игорь</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <section class="use">
+            <div class="container">
+                <div class="use__body">
+                    <h2 class="use__body-title">
+                        Как в полной мере использовать наш сервис
+                    </h2>
+                    <div class="use__body-block">
+                        <img src="../images/dist/use.png" alt="">
+                        <ul class="use__body-block-list">
+                            <li class="use__body-block-list-item">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="32" height="32" rx="16" fill="#007AFF"/>
+                                    <path d="M12.192 22.5V20.322H15.576V11.898H15.414L12.858 15.246L11.13 13.896L14.136 9.936H18.276V20.322H20.94V22.5H12.192Z" fill="white"/>
+                                </svg>                            
+                                <div class="use__body-block-list-item-text">
+                                    <span>Зарегистрируйтесь</span>
+                                    <p>Пройдите быструю и простую регистрацию на сайте, чтобы получить доступ ко всем функциям сервиса. Получите доступ к вашему личному кабинету.</p>
+                                </div>
+                            </li>
+                            <li class="use__body-block-list-item">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="32" height="32" rx="16" fill="#007AFF"/>
+                                    <path d="M20.418 22.5H11.526V20.034L15.396 16.722C15.744 16.422 16.038 16.152 16.278 15.912C16.518 15.66 16.71 15.42 16.854 15.192C17.01 14.952 17.118 14.718 17.178 14.49C17.25 14.262 17.286 14.016 17.286 13.752V13.5C17.286 13.26 17.238 13.05 17.142 12.87C17.046 12.69 16.92 12.54 16.764 12.42C16.608 12.3 16.428 12.21 16.224 12.15C16.032 12.09 15.834 12.06 15.63 12.06C15.33 12.06 15.066 12.108 14.838 12.204C14.622 12.3 14.43 12.432 14.262 12.6C14.106 12.756 13.974 12.942 13.866 13.158C13.758 13.362 13.674 13.584 13.614 13.824L11.256 12.924C11.4 12.492 11.598 12.084 11.85 11.7C12.102 11.304 12.414 10.962 12.786 10.674C13.17 10.374 13.62 10.14 14.136 9.972C14.652 9.804 15.234 9.72 15.882 9.72C16.566 9.72 17.172 9.816 17.7 10.008C18.228 10.2 18.672 10.464 19.032 10.8C19.404 11.136 19.686 11.538 19.878 12.006C20.07 12.462 20.166 12.96 20.166 13.5C20.166 14.04 20.076 14.532 19.896 14.976C19.716 15.42 19.47 15.84 19.158 16.236C18.858 16.62 18.504 16.986 18.096 17.334C17.688 17.682 17.262 18.036 16.818 18.396L14.478 20.232H20.418V22.5Z" fill="white"/>
+                                </svg>                            
+                                <div class="use__body-block-list-item-text">
+                                    <span>Добавьте ваши посылки</span>
+                                    <p>Внесите информацию по трек-кодам интересующих вас отправлений. Присваивайте им свои названия для комфортного и интуитивно понятного отслеживания.</p>
+                                </div>
+                            </li>
+                            <li class="use__body-block-list-item">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="32" height="32" rx="16" fill="#007AFF"/>
+                                    <path d="M15.216 14.904C15.888 14.904 16.374 14.778 16.674 14.526C16.986 14.262 17.142 13.938 17.142 13.554V13.428C17.142 12.972 16.992 12.606 16.692 12.33C16.404 12.054 15.99 11.916 15.45 11.916C14.946 11.916 14.472 12.048 14.028 12.312C13.584 12.564 13.206 12.93 12.894 13.41L11.202 11.826C11.442 11.514 11.7 11.232 11.976 10.98C12.252 10.716 12.564 10.494 12.912 10.314C13.26 10.122 13.65 9.978 14.082 9.882C14.514 9.774 15 9.72 15.54 9.72C16.212 9.72 16.818 9.798 17.358 9.954C17.91 10.11 18.378 10.338 18.762 10.638C19.158 10.926 19.458 11.274 19.662 11.682C19.878 12.09 19.986 12.546 19.986 13.05C19.986 13.446 19.92 13.806 19.788 14.13C19.668 14.454 19.494 14.736 19.266 14.976C19.05 15.216 18.798 15.414 18.51 15.57C18.222 15.714 17.916 15.816 17.592 15.876V15.984C17.964 16.056 18.306 16.176 18.618 16.344C18.942 16.5 19.218 16.704 19.446 16.956C19.686 17.208 19.872 17.508 20.004 17.856C20.136 18.192 20.202 18.576 20.202 19.008C20.202 19.572 20.088 20.082 19.86 20.538C19.632 20.994 19.308 21.384 18.888 21.708C18.468 22.032 17.964 22.284 17.376 22.464C16.788 22.632 16.14 22.716 15.432 22.716C14.796 22.716 14.232 22.65 13.74 22.518C13.248 22.386 12.816 22.212 12.444 21.996C12.084 21.768 11.766 21.51 11.49 21.222C11.226 20.934 10.992 20.628 10.788 20.304L12.786 18.756C13.062 19.272 13.398 19.698 13.794 20.034C14.202 20.358 14.748 20.52 15.432 20.52C16.044 20.52 16.518 20.37 16.854 20.07C17.202 19.758 17.376 19.338 17.376 18.81V18.702C17.376 18.186 17.178 17.802 16.782 17.55C16.398 17.286 15.864 17.154 15.18 17.154H14.046V14.904H15.216Z" fill="white"/>
+                                </svg>                            
+                                <div class="use__body-block-list-item-text">
+                                    <span>Получайте информацию</span>
+                                    <p>Получайте актуальную иформацию по прибытию ваших посылок, изменению их статуса и места назначения. Будьте в курсе любых изменений.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer__main">
+            <div class="container">
+                <div class="footer__main-body">
+                    <div class="footer__main-body-top">
+                        <a href="" class="footer__main-body-top-logo">
+                            <img src="../images/dist/logo.png" alt="">
+                        </a>
+                        <nav class="footer__main-body-top-nav">
+                            <ul class="footer__main-body-top-nav-menu">
+                                <span>О сервисе</span>
+                                <li>
+                                    <a href="">Способы оплаты</a>
+                                </li>
+                                <li>
+                                    <a href="">Тарифы</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__main-body-top-nav-menu">
+                                <span>Документы</span>
+                                <li>
+                                    <a href="">Обработка персональных данных</a>
+                                </li>
+                                <li>
+                                    <a href="">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="">Правила пользования сервисом</a>
+                                </li>
+                            </ul>
+                            <ul class="footer__main-body-top-nav-menu">
+                                <span>Контактный телефон</span>
+                                <a class="tel" href="">8(495)128-26-55</a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__main-body-bot">
+                        <div class="line"></div>
+                        <p>Услуга предоставляется на платной основе. При оплате через мобильного оператора стоимость составляет 30р/сутки. При оплате через UnitPay услуга составляет 399р на 14 дней. Подробнее об условиях пользования сервисом смотрите в Пользовательском соглашении. Отключение услуги и возврат средств осуществляется через Службу поддержки support@hphelp.me | www.hphelp.me</p>
+                        <p>©2021 Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="../js/main.min.js"></script>
+    </body>
+    
+    </html>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="../js/main.min.js"></script>
 </body>
 

@@ -1,31 +1,47 @@
-.header{
+.header {
     width: 100%;
     padding: 18px 0px;
-    &__body{
+    box-shadow: 0px 0px 1px 0px #0000003D;
+    position: relative;
+    box-shadow: 0px 12px 24px -6px #00000014;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: #FFFFFF;
+    left: 0;
+    transition: all 0.5s ease;
+    &__body {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        &-logo{
+
+        &-logo {
             width: 229px;
             height: 24px;
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
             }
         }
-        &-choose{
+
+        &-choose {
             display: flex;
             align-items: center;
             gap: 8px;
             border: 1px solid #555555;
             border-radius: 6px;
             padding: 7px;
-            svg{
+            background: transparent;
+            svg {
                 width: 18px;
                 height: 18px;
             }
-            span{
+            .open{
+                display: none;
+            }
+            span {
                 font-size: 16px;
                 line-height: 24px;
                 font-weight: 500;
@@ -33,5 +49,67 @@
                 text-align: left;
             }
         }
+        &-choose.active {
+            .open{
+                display: flex;
+            }
+            .dopen{
+                display: none;
+            }
+        }
     }
+
+    &__menu {
+        width: 100%;
+        background: #FFFFFF;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        &-body {
+            display: flex;
+            gap: 111px;
+            padding: 32px 0;
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .line {
+                    width: 410px;
+                    height: 1px;
+                    background: #EBEBEB;
+                }
+
+                li{
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 13px;
+                        img {
+                            width: 48px;
+                            height: 48px;
+                        }
+    
+                        span {
+                            font-size: 18px;
+                            font-weight: 600;
+                            line-height: 26px;
+                            text-align: left;
+                            color: #333;
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+    &__menu.active{
+        height: 472px;
+    }
+}
+.header.tr{
+    background: transparent !important;
+    box-shadow: none;
 }

@@ -14,3 +14,10 @@ body{
     margin: 0 auto;
     max-width: 1290px;
 }
+
+.desk{
+    display: flex !important;
+}
+.mob{
+    display: none !important;
+}

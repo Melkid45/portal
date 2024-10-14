@@ -1,0 +1,38 @@
+.main__services {
+    width: 100%;
+    margin-top: 80px;
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        &-title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+            color: #333333;
+        }
+        &-block{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            max-width: 1070px;
+            &-item{
+                width: 158.33px;
+                height: 80px;
+                background: #F5F8FB;
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 80px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
