@@ -33,7 +33,7 @@ nav, footer, header, aside {
     transition: all 0.3s ease;
 }
 .button__hover:hover{
-    background: #6fb4ff;
+    background: #3b91ef;
 }
 
 html, body {
@@ -707,7 +707,7 @@ body {
     transition: all 0.3s ease;
 }
 .catalog__body-choose-bot-filter:hover {
-    background: #6fb4ff;
+    background: #3b91ef;
     
 }
 .catalog__body-choose-bot-filter:hover span{
@@ -756,7 +756,7 @@ body {
     transition: all 0.3s ease;
 }
 .catalog__body-choose-bot-item:hover{
-    background: #6fb4ff;
+    background: #3b91ef;
     color: #fff;
 }
 .catalog__body .line {
@@ -2060,7 +2060,7 @@ body {
 }
 
 .question__body-block-list-item:hover {
-    background: #6fb4ff;
+    background: #3b91ef;
     color: #fff
 }
 
@@ -4945,7 +4945,7 @@ a {
     }
 
     .question__body-block-list-item:hover {
-        background: #6fb4ff;
+        background: #3b91ef;
         color: #fff
     }
 
@@ -7845,7 +7845,7 @@ a {
     }
 
     .question__body-block-list-item:hover {
-        background: #6fb4ff;
+        background: #3b91ef;
         color: #fff
     }
 
