@@ -26,7 +26,20 @@ a:focus, a:active {
 nav, footer, header, aside {
     display: block
 }
-
+.button__hover{
+    transition: all 0.3s ease;
+}
+.button__hover svg path{
+    transition: all 0.3s ease;
+}
+.button__hover:hover{
+    color: #007aff;
+    background: transparent;
+    border: 1px solid #007aff;
+}
+.button__hover:hover svg path{
+    stroke: #007aff;
+}
 html, body {
     height: 100%;
     width: 100%;
@@ -5941,8 +5954,8 @@ a {
     }
 
     .header__body-logo {
-        width: 120rem;
-        height: 12rem
+        width: 152rem;
+        height: 16rem
     }
 
     .header__body-logo img {
@@ -5993,7 +6006,7 @@ a {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 24rem;
+        gap: 6rem;
         padding: 16rem 0
     }
 
@@ -6043,7 +6056,7 @@ a {
 
     .items {
         width: 100%;
-        margin-top: 50rem
+        margin-top: 25rem
     }
 
     .items__body {
@@ -7954,7 +7967,8 @@ a {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        border-radius: 12rem
+        border-radius: 12rem;
+        max-height: max-content;
     }
 
     .review__body-slide-top {
