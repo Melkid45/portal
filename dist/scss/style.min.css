@@ -1149,7 +1149,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     gap: 8px;
-    border: 1px solid #555;
+    border: 1px solid #e5f2ff;
     border-radius: 6px;
     padding: 7px;
     background: rgba(0, 0, 0, 0)
@@ -1157,7 +1157,8 @@ body {
 
 .header__body-choose svg {
     width: 18px;
-    height: 18px
+    height: 18px;
+    order: 1;
 }
 
 .header__body-choose .open {
@@ -2984,7 +2985,9 @@ a {
 
 .watch__body img {
     width: 591px;
-    height: 384px
+    height: 384px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .checkbox {
@@ -3149,7 +3152,7 @@ a {
         -ms-flex-align: center;
         align-items: center;
         gap: 8rem;
-        border: 1rem solid #555;
+        border: 1px solid #e5f2ff;
         border-radius: 6rem;
         padding: 7rem
     }
@@ -5793,7 +5796,9 @@ a {
 
     .watch__body img {
         width: 591rem;
-        height: 384rem
+        height: 384rem;
+        border-top-right-radius: 40rem;
+        border-bottom-right-radius: 40rem;
     }
 
     .checkbox {
@@ -5982,7 +5987,7 @@ a {
         -ms-flex-align: center;
         align-items: center;
         gap: 4rem;
-        border: 1rem solid #555;
+        border: 1px solid #e5f2ff;
         border-radius: 6rem;
         padding: 3rem
     }
